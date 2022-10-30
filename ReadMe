@@ -1,0 +1,16 @@
+
+
+
+   Our framework is a maven project using testng to write testcases.
+     * Major components of the framework:
+     *  1. Pages.DriverWrapper : it's a class where everything related to driver to handle (eg: initialization, closing, getDriver)
+     *  2. Pages.BasePage: it's a class which contains all generic actions to interact webpage. (eg: type, clickOn, selectFromDropdown, getTextFromElement)
+     *  3. Pages: it's a package, which contains all page-Objects for every page of the web-application.
+     *  4. Testcases: it's a package, which contains sub-packages for every functionality (eg: login, signUp, payment, order-history, user-account)
+     *      Sub packages contains all testcases related to the functionality.
+     *  5. TestSuite: it's a package which contains all testSuite (or testng xml files)
+     *      xml files are specific to testing type. (eg: 1 for smoke testing, 2 for regression testing)
+     *  6. Reports: it's a package which contains all files related to report creation and storing report the same
+     *      we use "allure" report in our framework.
+     *  7. Utils: it's a package which contains all helper files and test-user data (enum).
+     *
